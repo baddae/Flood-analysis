@@ -1,6 +1,4 @@
 """
-Name: Bright Addae
-Date: 2023-6-24
 Purpose: To create a script that counts the number of reported street flooding incidents that occurred
 within 10 meters of a sewer catch basin for each month since January 2022. The script will output the
 results to an Excel file.
@@ -12,8 +10,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Define input shapefiles
-sewer_catch_basin = r"G:\Bright\City_of_Vancouver\sewer-catch-basins.shp"
-service_requests = r"G:\Bright\City_of_Vancouver\Street_flooding.shp"
+sewer_catch_basin = r"G:\............\sewer-catch-basins.shp"
+service_requests = r"G:\............\Street_flooding.shp"
 
 # Create feature layers for the input shapefiles
 arcpy.MakeFeatureLayer_management(sewer_catch_basin, "sewer_catch_basin_layer")
@@ -59,4 +57,4 @@ while current_date < end_date:
     current_date = next_month_date
 
 # Export the DataFrame to an Excel file
-df.to_excel('G:/Bright/City_of_Vancouver/Monthly_reported_flooding.xlsx', index=False)
+df.to_excel('G:/............/Monthly_reported_flooding.xlsx', index=False)
