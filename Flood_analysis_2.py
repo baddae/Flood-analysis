@@ -1,6 +1,4 @@
 """
-Name: Bright Addae
-Date: 2023-6-24
 Purpose: To determine the number of reported street flooding incidents that occurred within 10 meters
 of a sewer catch basin in November 2023.
 """
@@ -8,8 +6,8 @@ of a sewer catch basin in November 2023.
 import arcpy
 
 # Define input shapefiles
-sewer_catch_basin = r"G:\Bright\City_of_Vancouver\sewer-catch-basins.shp"
-service_requests = r"G:\Bright\City_of_Vancouver\Street_flooding.shp"
+sewer_catch_basin = r"G:\............\sewer-catch-basins.shp"
+service_requests = r"G:\............\Street_flooding.shp"
 
 # Create feature layers for the input shapefiles
 arcpy.MakeFeatureLayer_management(sewer_catch_basin, "sewer_catch_basin_layer")
