@@ -1,6 +1,4 @@
 """
-Name: Bright Addae
-Date: 2023-6-24
 Purpose: Analyze the number of streets intersecting with service requests for street flooding
 in November 2023 within different search distances.
 """
@@ -9,8 +7,8 @@ in November 2023 within different search distances.
 import arcpy
 
 # Define input shapefiles
-public_streets = r"G:\Bright\City_of_Vancouver\public-streets.shp"
-service_requests = r"G:\Bright\City_of_Vancouver\Street_flooding.shp"
+public_streets = r"G:\............\public-streets.shp"
+service_requests = r"G:\............\Street_flooding.shp"
 
 # Set search distances in meters
 search_distances = [0, 1, 2.5, 5]
